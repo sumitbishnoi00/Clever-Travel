@@ -8,7 +8,7 @@ const Button = ({btn, vari}) => {
         
     }
   return (
-    <button className={` btn max-w-max md:py-6 sm:py-4 py-3  md:px-12 sm:px-9 px-7 font-semibold lg:text-[24px] md:text-[20px] sm:text-[18px] text-[16px] leading-[100%] mt-10 transition-all duration-500 cursor-pointer ${variants[vari]} `}>
+    <button className={`jost btn max-w-max md:py-6 sm:py-4 py-3  md:px-12 sm:px-9 px-7 font-semibold lg:text-[24px] md:text-[20px] sm:text-[18px] text-[16px] leading-[100%] lg:mt-10 md:mt-9 sm:mt-7 mt-5 transition-all duration-500 cursor-pointer ${variants[vari]} `}>
         {btn}
     </button>
   )

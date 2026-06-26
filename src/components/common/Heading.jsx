@@ -8,7 +8,7 @@ const Heading = ({heading, vari}) => {
         
     }
   return (
-    <h2 className={`font-medium leading-[120%] ${variants[vari]}`}>{heading}</h2>
+    <h2 className={`jost font-medium leading-[120%] ${variants[vari]}`}>{heading}</h2>
   )
 }
 

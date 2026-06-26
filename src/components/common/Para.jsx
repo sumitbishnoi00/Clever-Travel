@@ -7,7 +7,7 @@ const Para = ({para, vari}) => {
         
     }
   return (
-    <p className={` font-normal md:text-[18px] sm:text-[16px] text-sm leading-[166.67%] ${variants[vari]}`}>{para}</p>
+    <p className={`Poppins font-normal md:text-[18px] sm:text-[16px] text-sm leading-[166.67%] ${variants[vari]}`}>{para}</p>
   )
 }
 

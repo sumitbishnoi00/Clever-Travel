@@ -2,6 +2,9 @@
 
 
 @theme {
-        --color-charcoal-blue: #41546B;
-        --color-orange: #ED8C0C;
-      }
+  --color-dark-charcol: #212121;
+  --color-slate-blue: #41546B;
+  --color-charcoal-blue: #41546B;
+  --color-orange: #ED8C0C;
+  --color-wheet: #FEF9F3;
+}

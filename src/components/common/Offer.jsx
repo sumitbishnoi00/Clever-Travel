@@ -12,7 +12,7 @@ const Offer = ({image, frameImage, title, description, reverse = false }) => {
             </div>
 
             <div className={`z-20 relative w-full max-w-75 sm:max-w-95 md:max-w-115 lg:max-w-135 xl:max-w-155 2xl:max-w-183.5 min-h-auto xl:min-h-100.5 bg-cover bg-center bg-no-repeat px-3 py-3 md:px-5 md:py-5 lg:px-7 lg:py-7 xl:px-10 xl:py-10 2xl:px-15 2xl:pt-15 2xl:pb-15 flex flex-col justify-center ${reverse ? "xl:-mr-20 2xl:-mr-25.5 lg:-mt-16 md:-mt-14 mt-0 xl:mt-0" : "xl:-ml-20 2xl:-ml-25.5 lg:-mt-16 md:-mt-14 mt-2 xl:mt-0"}`} style={{backgroundImage: "url('/assets/Offers-bg.webp')"}}>
-                <h3 className='font-semibold lg:text-[30px] md:text-[24px] sm:text-[20px] text-[18px] leading-[100%] text-orange underline mb-5'>{title}</h3>
+                <h3 className='josefin font-semibold lg:text-[30px] md:text-[24px] sm:text-[20px] text-[18px] leading-[100%] text-orange underline mb-5'>{title}</h3>
                 <Para para={description} vari="pri" />
                 <Button btn={"Book Now"} vari="sec" />
             </div>

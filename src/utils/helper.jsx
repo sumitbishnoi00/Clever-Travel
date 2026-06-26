@@ -44,3 +44,89 @@ export const OFFER_CARD = [
     },
 
 ];
+
+export const ROW1 = [
+
+    "/assets/row-1.1.webp",
+    "/assets/row-1.2.webp",
+    "/assets/row-1.3.webp",
+    "/assets/row-1.4.webp",
+    "/assets/row-1.5.webp",
+    "/assets/row-1.6.webp",
+    "/assets/row-1.7.webp",
+
+];
+
+export const ROW2 = [
+
+    "/assets/row-2.1.webp",
+    "/assets/row-2.2.webp",
+    "/assets/row-2.3.webp",
+    "/assets/row-2.4.webp",
+    "/assets/row-2.5.webp",
+    "/assets/row-2.6.webp",
+    "/assets/row-2.7.webp",
+
+];
+
+export const ROW3 = [
+
+    "/assets/row-3.1.webp",
+    "/assets/row-3.2.webp",
+    "/assets/row-3.3.webp",
+    "/assets/row-3.4.webp",
+    "/assets/row-3.5.webp",
+    "/assets/row-3.6.webp",
+
+];
+
+export const CARD_DATA = [
+    {
+        image:"/assets/ahmad.webp",
+        heading:"Ahmad Bator ",
+        title:"Director of Zaara",
+        para:"Lorem ipsum dolor sit amet consectetur. Nulla nullam cras porttitor vel in ornare est commodo. Rhoncus diam sed pellentesque interdum."
+    },
+    {
+        image:"/assets/Craig.webp",
+        heading:"Craig Botosh",
+        title:"Director of Zaara",
+        para:"Lorem ipsum dolor sit amet consectetur. Nulla nullam cras porttitor vel in ornare est commodo. Rhoncus diam sed pellentesque interdum."
+    },
+    {
+        image:"/assets/Ashlynn.webp",
+        heading:"Ashlynn Carder",
+        title:"Director of Zaara",
+        para:"Lorem ipsum dolor sit amet consectetur. Nulla nullam cras porttitor vel in ornare est commodo. Rhoncus diam sed pellentesque interdum."
+    },
+];
+
+export const FEATURES_LEFT = [
+
+    {
+        icon: "Convenience",
+        title: "Convenience",
+        desc: "Simplify your travel planning with a one-stop solution that handles all the details, from booking flights to arranging accommodations.",
+    },
+    {
+        icon: "Luxury",
+        title: "Luxury",
+        desc: "Indulge in personalized, high-end travel experiences tailored to your preferences.",
+    },
+
+];
+
+export const FEATURES_RIGHT = [
+
+    {
+        icon: "Expertise",
+        title: "Expertise",
+        desc: "Benefit from the knowledge and insider insights of travel professionals who know the best destinations, deals, and itineraries.",
+    },
+    {
+        icon: "Savings",
+        title: "Savings",
+        desc: "Maximize your travel budget with access to exclusive discounts and special deals.",
+    },
+
+];
