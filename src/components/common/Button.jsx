@@ -4,11 +4,11 @@ const Button = ({btn, vari}) => {
 
     const variants = {
         pri: "border border-transparent bg-orange text-white hover:bg-white hover:border-orange hover:text-orange",
-        sec: className=" border border-white bg-transparent text-white hover:border-transparent hover:bg-white hover:text-charcoal-blue",
+        sec: " border border-white bg-transparent text-white hover:border-transparent hover:bg-white hover:text-charcoal-blue",
         
     }
   return (
-    <button className={` btn py-6 px-12 font-semibold text-[24px] leading-[100%] transition-all duration-500 cursor-pointer ${variants[vari]} `}>
+    <button className={` btn max-w-max md:py-6 sm:py-4 py-3  md:px-12 sm:px-9 px-7 font-semibold lg:text-[24px] md:text-[20px] sm:text-[18px] text-[16px] leading-[100%] mt-10 transition-all duration-500 cursor-pointer ${variants[vari]} `}>
         {btn}
     </button>
   )
