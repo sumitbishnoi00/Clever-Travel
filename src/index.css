@@ -2,7 +2,9 @@
 
 
 @theme {
-  --color-clifford: #da373d;
-  --color-muted-blue: #41546B;
+  --color-dark-charcol: #212121;
+  --color-slate-blue: #41546B;
+  --color-charcoal-blue: #41546B;
   --color-orange: #ED8C0C;
+  --color-wheet: #FEF9F3;
 }
