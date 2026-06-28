@@ -14,7 +14,7 @@ const Footer = () => {
             <img className=' md:w-[273.41px] sm:w-48 w-36 h-auto lg:mb-10 md:mb-8 sm:mb-6 mb-4' src="/assets/navlogo.webp" alt="" />
           </div>
           <div className='flex flex-col '>
-            <div className='flex flex-row justify-between mb-7.5'>
+            <div className='flex flex-row gap-5 mb-7.5'>
               <div className='max-w-112.25 w-full'>
                 <h3 className='text-[16px] font-medium leading-[100%] text-charcoal-blue'>First Name</h3>
                 <input type="text" placeholder='Enter First Name...' className='px-3.75 py-3.5 text-[16px] font-medium leading-[100%] text-cool-gray border w-full outline-none mt-3.75 border-ash-blue ' />
