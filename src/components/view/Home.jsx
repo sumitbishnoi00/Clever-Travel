@@ -5,18 +5,16 @@ import Offers from "../home/Offers";
 import Marquee from "../home/Marquee";
 import TravelImg from "../home/TravelImg";
 import Cards from "../home/Cards";
-import Navbar from "../common/Navbar";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <Roadmap />
       <Offers />
       <Marquee />
       <TravelImg />
-      {/* <Cards /> */}
+      <Cards />
     </>
   );
 };
