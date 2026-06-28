@@ -5,13 +5,13 @@ import Icons from './Icons'
 
 const Footer = () => {
   return (
-    <footer className='px-4 my-30' >
-      <div className='max-w-[1760px] mx-auto flex w-full relative '>
+    <footer className='px-4 sm:my-20 lg:my-30' >
+      <div className='max-w-[1760px] mx-auto flex flex-col lg:flex-row w-full relative '>
         {/* form */}
-        <div className='p-15 max-w-260 w-full border border-cool-gray'>
-          <div className='flex flex-row justify-between flex-nowrap'>
+        <div className='p-5 sm:p-8 md:p-10 lg:p-15 lg:max-w-260 w-full border border-cool-gray'>
+          <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center gap-5 flex-nowrap'>
             <Heading heading={<>Get in <span className='text-orange underline flex-nowrap'>Touch</span> </>} vari={"sec"} />
-            <img className=' md:w-[273.41px] sm:w-50 w-40  md:h-20 sm:h-18 h-14  lg:mb-10 md:mb-8 sm:mb-6 mb-4' src="/assets/navlogo.webp" alt="" />
+            <img className=' md:w-[273.41px] sm:w-48 w-36 h-auto lg:mb-10 md:mb-8 sm:mb-6 mb-4' src="/assets/navlogo.webp" alt="" />
           </div>
           <div className='flex flex-col '>
             <div className='flex flex-row justify-between mb-7.5'>
