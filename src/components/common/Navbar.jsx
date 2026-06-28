@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { NAV_DATA } from "../../utils/helper";
+
 import { Link, useLocation } from "react-router-dom";
+import { NAV_DATA } from "../../utils/helper";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);

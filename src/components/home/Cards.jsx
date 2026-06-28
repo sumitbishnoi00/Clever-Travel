@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { CARD_DATA } from '../../utils/helper'
 import Icons from '../common/Icons'
 import Heading from '../common/Heading'
