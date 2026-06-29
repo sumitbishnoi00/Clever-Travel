@@ -16,7 +16,7 @@ const Roadmap = () => {
           <Para para={"Clever Travel Solutions specializes in booking the best and most affordable flight options, particularly for international business and first-class travel. Our exceptional customer service ensures a seamless and enjoyable travel experience from start to finish."} vari="sec" />
         </div>
 
-        <div className='grid lg:grid-cols-[1fr_588px_1fr] gap-20.25 items-center mt-22.5'>
+        <div className='grid xl:grid-cols-[1fr_588px_1fr] gap-20.25 items-center mt-22.5'>
 
             <div className='flex flex-col gap-10'>
               {FEATURES_LEFT.map((item, index) => (
