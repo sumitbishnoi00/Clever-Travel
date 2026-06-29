@@ -6,7 +6,7 @@ import Icons from './Icons'
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className='px-4 sm:mt-20 lg:mt-30 flex flex-col items-center justify-center' >
+    <footer className='px-4 lg:mt-30 md:mt-22 sm:mt-15 mt-10 flex flex-col items-center justify-center' >
       <div className='max-w-[1760px] mx-auto flex flex-col lg:flex-row w-full relative '>
         {/* form */}
         <div className='p-5 sm:p-8 md:p-10 lg:p-15 lg:max-w-260 w-full border border-cool-gray'>
