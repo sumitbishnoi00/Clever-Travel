@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-
 import { Link, useLocation } from "react-router-dom";
-import { NAV_DATA } from "../../utils/helper";
 import Icons from "./Icons";
+import { NAV_DATA } from "../../utils/helper";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -30,18 +29,19 @@ const Navbar = () => {
           {NAV_DATA.map((item, index) => (
             <Link to={item.link} key={index} onClick={() => setNav(false)}>
               <li
-                className={`xl:text-[24px] text-[20px]  font-medium text-muted-blue  hover:text-orange duration-300 transition-all`}
+
+                className={`jost xl:text-[24px] text-[20px]  font-medium text-muted-blue  hover:text-orange duration-300 transition-all`}
+
               >
                 {item.title}
               </li>
             </Link>
           ))}
         </ul>
-        <button className="group lg:px-5 md:px-4 sm:px-3 px-2 cursor-pointer lg:py-2.5 md:py-2 py-1 flex lg:text-[24px] md:text-[20px] sm:text-[18px] text-[14px] font-medium leading-[140%] items-center gap-2.5 bg-muted-blue text-white border border-transparent hover:bg-white hover:border-muted-blue transition-all duration-300">
-          <Icons
-            icon={"phone"}
-            className={"lg:w-7.5 lg:h-7.5 md:w-6 md:h-6 sm:w-5 sm:h-5 w-4 h-4"}
-          />
+
+        <button className="jost group lg:px-5 md:px-4 sm:px-3 px-2 cursor-pointer lg:py-2.5 md:py-2 py-1 flex lg:text-[24px] md:text-[20px] sm:text-[18px] text-[14px] font-medium leading-[140%] items-center gap-2.5 bg-muted-blue text-white border border-transparent hover:bg-white hover:border-muted-blue transition-all duration-300">
+          <Icons icon={"phone"} className={"lg:w-7.5 lg:h-7.5 md:w-6 md:h-6 sm:w-5 sm:h-5 w-4 h-4"} />
+
           <span className="transition-all duration-300  group-hover:text-muted-blue">
             347-385-6647
           </span>
@@ -51,26 +51,26 @@ const Navbar = () => {
           className="lg:hidden relative w-6 h-6 z-60 cursor-pointer"
         >
           <span
-            className={`absolute left-0 md:w-6 w-5 h-1 bg-black rounded transition-all duration-300 ${
-              nav ? "rotate-45 top-2.5" : "md:top-0 top-0.5"
-            }`}
+
+            className={`absolute left-0 md:w-6 w-5 h-1 bg-black rounded transition-all duration-300 ${nav ? "rotate-45 top-2.5" : "md:top-0 top-0.5"
+              }`}
           ></span>
 
           <span
-            className={`absolute left-0 md:w-6 w-5 h-1 bg-black rounded transition-all duration-300 ${
-              nav ? "opacity-0" : "top-2.5 "
-            }`}
+            className={`absolute left-0 md:w-6 w-5 h-1 bg-black rounded transition-all duration-300 ${nav ? "opacity-0" : "top-2.5 "
+              }`}
           ></span>
 
           <span
-            className={`absolute left-0 md:w-6 w-5 h-1 bg-black rounded transition-all duration-300 ${
-              nav ? "-rotate-45 top-2.5" : " md:top-5 top-4.5"
-            }`}
+            className={`absolute left-0 md:w-6 w-5 h-1 bg-black rounded transition-all duration-300 ${nav ? "-rotate-45 top-2.5" : " md:top-5 top-4.5"
+              }`}
+
           ></span>
         </button>
       </nav>
     </div>
   );
 };
+
 
 export default Navbar;

@@ -6,7 +6,7 @@ import FeatureCard from '../common/FeatureCard'
 
 const Roadmap = () => {
   return (
-    <section className='px-3 pt-30'>
+    <section className='px-3 lg:pt-30 md:pt-22 sm:pt-15 pt-10'>
       <div className='max-w-360 w-full mx-auto flex flex-col items-center justify-center'>
 
         <img src="/assets/navlogo.webp" className='w-[273.42px] h-20 mb-5' alt="travel-logo" />

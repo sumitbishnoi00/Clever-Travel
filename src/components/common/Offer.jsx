@@ -7,7 +7,7 @@ const Offer = ({image, frameImage, title, description, reverse = false }) => {
     <div className='flex justify-center'>
         <div className={` relative flex flex-col xl:flex-row items-center justify-center mx-auto ${reverse ? "xl:flex-row-reverse" : "" }`}>
             <div className=' relative z-10 max-w-75 sm:max-w-105 md:max-w-130 lg:max-w-162.5 xl:max-w-190 2xl:max-w-208 w-full mx-auto shrink-0'>
-                <img src={frameImage} alt="golden-frame" className={` absolute z-0 hidden xl:block pointer-events-none max-w-130.5 w-full top-0 ${reverse ? "-right-32" : "-left-32"}`} />
+                <img src={frameImage} alt="golden-frame" className={` absolute z-0 hidden min-[1720px]:block pointer-events-none max-w-130.5 w-full top-0 ${reverse ? "-right-32" : "-left-32"}`} />
                 <img src={image} alt={title} className=' relative z-10 w-full h-auto object-contain' />
             </div>
 

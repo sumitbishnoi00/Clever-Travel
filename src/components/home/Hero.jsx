@@ -1,7 +1,8 @@
 import React from 'react'
 import Heading from '../common/Heading'
-import Para from '../common/Para'
 import Button from '../common/Button'
+import Para from '../common/Para'
+
 
 const Hero = () => {
   return (

@@ -4,7 +4,8 @@ const Heading = ({heading, vari}) => {
     const variants = {
         pri: "xl:text-[84px] lg:text-[60px] md:text-[42px] text-[32px] text-white",
         sec: "lg:text-[60px] md:text-[48px] sm:text-[38px] text-[32px] text-charcoal-blue mb-5",
-        dan: "lg:text-[60px] md:text-[48px] sm:text-[38px] text-[32px] text-orange underline"
+        dan: "lg:text-[60px] md:text-[48px] sm:text-[38px] text-[32px] text-orange underline",
+        not: "lg:text-[60px] md:text-[48px] sm:text-[38px] text-[32px] text-charcoal-blue",
         
     }
   return (

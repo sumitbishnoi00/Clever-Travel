@@ -6,7 +6,7 @@ import Offer from '../common/Offer'
 
 const Offers = () => {
   return (
-    <section className='px-3 pt-30'> 
+    <section className='px-3 lg:pt-30 md:pt-22 sm:pt-15 pt-10'> 
         <div className='max-w-[1760px] w-full mx-auto flex flex-col items-center justify-center'>
             <div className='max-w-238.5 w-full flex flex-col items-center justify-center text-center'>
                 <Heading heading={<><span className='text-orange underline'>Services</span> We Offer</>} vari="sec" />

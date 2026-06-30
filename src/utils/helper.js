@@ -16,7 +16,8 @@ export const NAV_DATA = [
     title: "Get a Quote",
   },
 ];
-export const OFFER_CARD = [
+
+    export const OFFER_CARD = [
   {
     id: 1,
     image: "/assets/Personalized-1.webp",
