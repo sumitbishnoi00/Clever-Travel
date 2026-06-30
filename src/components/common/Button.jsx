@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({btn, vari}) => {
+const Button = ({btn, vari, type = "button" }) => {
 
     const variants = {
         pri: "border border-transparent bg-orange text-white hover:bg-white hover:border-orange hover:text-orange lg:mt-10 md:mt-9 sm:mt-7 mt-5",

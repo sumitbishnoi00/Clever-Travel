@@ -21,11 +21,13 @@ const Navbar = () => {
   return (
     <div className="sm:px-4 px-3 bg-white lg:py-5 md:py-4 sm:py-3 py-2 ">
       <nav className="max-w-[1760px] mx-auto flex flex-row justify-between items-center ">
+        <Link href="/">
         <img
           className=" lg:w-[273.42px] lg:h-20 md:w-55 md:h-18 sm:w-50 sm:h-15 w-30 h-8 cursor-pointer"
           src="/assets/navlogo.webp"
           alt=""
         />
+        </Link>
         <ul
           className={`flex flex-row xl:gap-12.5 gap-10 max-lg:fixed max-lg:top-0 max-lg:w-full  max-lg:h-screen max-lg:bg-white max-lg:z-50 max-lg:flex-col max-lg:justify-center max-lg:items-center duration-300 transition-all ${nav ? "max-lg:right-0" : "max-lg:-right-full"}`}
         >
@@ -41,9 +43,9 @@ const Navbar = () => {
         </ul>
         <button className="jost group lg:px-5 md:px-4 sm:px-3 px-2 cursor-pointer lg:py-2.5 md:py-2 py-1 flex lg:text-[24px] md:text-[20px] sm:text-[18px] text-[14px] font-medium leading-[140%] items-center gap-2.5 bg-muted-blue text-white border border-transparent hover:bg-white hover:border-muted-blue transition-all duration-300">
           <Icons icon={"phone"} className={"lg:w-7.5 lg:h-7.5 md:w-6 md:h-6 sm:w-5 sm:h-5 w-4 h-4"} />
-          <span className="transition-all duration-300  group-hover:text-muted-blue">
+          <a href="tel:+347-385-6647" className="transition-all duration-300  group-hover:text-muted-blue">
             347-385-6647
-          </span>
+          </a>
         </button>
         <button
           onClick={() => setNav(!nav)}

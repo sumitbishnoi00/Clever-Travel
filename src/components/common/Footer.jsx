@@ -1,9 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Heading from './Heading'
 import Button from './Button'
 import Icons from './Icons'
 
 const Footer = () => {
+
+  const [fromData, setFormData] = useState({ firstName: "", email: "", message: "", });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handChange = (e) => {
+
+    setFormData({
+      ...fromData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handSubmit = (e) => {
+
+    e.preventDefault();
+
+    console.log(fromData);
+
+    setSubmitted(true);
+
+    setFormData({
+      firstName: "",
+      email: "",
+      message: "",
+    });
+
+    setTimeout(() => {
+
+      setSubmitted(false);
+    }, 3000);
+  };
+
   const currentYear = new Date().getFullYear();
   return (
     <footer className='px-4 lg:mt-30 md:mt-22 sm:mt-15 mt-10 flex flex-col items-center justify-center' >
@@ -14,30 +47,36 @@ const Footer = () => {
             <Heading heading={<>Get in <span className='text-orange underline flex-nowrap'>Touch</span> </>} vari={"not"} />
             <img className=' md:w-[273.41px] sm:w-48 w-36 h-auto' src="/assets/navlogo.webp" alt="footer logo" />
           </div>
-          <div className='flex flex-col'>
-            <div className='flex flex-col md:flex-row gap-5 mb-7.5'>
-              <div className='md:max-w-112.25 w-full'>
-                <h3 className='Poppins text-[16px] font-medium leading-[100%] text-charcoal-blue'>First Name</h3>
-                <input type="text" placeholder='Enter First Name...' className='Poppins px-3.75 py-3.5 text-[16px] font-medium leading-[100%] text-cool-gray border w-full outline-none mt-3.75 border-ash-blue ' />
-              </div>
-              <div className='md:max-w-112.25 w-full'>
-                <h3 className='Poppins text-[16px] font-medium leading-[100%] text-charcoal-blue'>Email</h3>
-                <input type="email" placeholder='Enter Email...' className='Poppins px-3.75 py-3.5 text-[16px] font-medium leading-[100%] text-cool-gray border w-full outline-none mt-3.75 border-ash-blue ' />
+          <form onSubmit={handSubmit}>
+            <div className='flex flex-col'>
+              <div className='flex flex-col md:flex-row gap-5 mb-7.5'>
+                <div className='md:max-w-112.25 w-full'>
+                  <h3 className='Poppins text-[16px] font-medium leading-[100%] text-charcoal-blue'>First Name</h3>
+                  <input type="text" name='firstName' value={fromData.firstName} onChange={handChange} required placeholder='Enter First Name...' className='Poppins px-3.75 py-3.5 text-[16px] font-medium leading-[100%] text-cool-gray border w-full outline-none mt-3.75 border-ash-blue ' />
+                </div>
+                <div className='md:max-w-112.25 w-full'>
+                  <h3 className='Poppins text-[16px] font-medium leading-[100%] text-charcoal-blue'>Email</h3>
+                  <input type="email" name='email' value={fromData.email} onChange={handChange} required placeholder='Enter Email...' className='Poppins px-3.75 py-3.5 text-[16px] font-medium leading-[100%] text-cool-gray border w-full outline-none mt-3.75 border-ash-blue ' />
+                </div>
               </div>
             </div>
-          </div>
-          <div className='mb-7.5'>
-            <h3 className='Poppins text-[16px] font-medium leading-[100%] text-charcoal-blue'>Message</h3>
-            <textarea type="message" placeholder='Lorem ipsum dolor sit amet consectetur...' className='Poppins px-3.75 py-3.5 text-[16px] font-medium leading-[100%] pb-10 text-cool-gray border w-full outline-none mt-3.75 border-ash-blue resize-none' />
-          </div>
-          <div className='flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5'>
-            <div className='flex flex-row  items-center gap-3.75'>
-              <Icons icon={"pin"} />
-              <h2 className='jost text-xl sm:text-[24px] font-medium leading-[100%] text-charcoal-blue'>Attach Files</h2>
+            <div className='mb-7.5'>
+              <h3 className='Poppins text-[16px] font-medium leading-[100%] text-charcoal-blue'>Message</h3>
+              <textarea type="message" name='message' value={fromData.message} onChange={handChange} required placeholder='Lorem ipsum dolor sit amet consectetur...' className='Poppins px-3.75 py-3.5 text-[16px] font-medium leading-[100%] pb-10 text-cool-gray border w-full outline-none mt-3.75 border-ash-blue resize-none' />
             </div>
-            <Button btn={"Send"} vari={"dan"} />
-          </div>
-
+            <div className='flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5'>
+              <div className='flex flex-row  items-center gap-3.75'>
+                <Icons icon={"pin"} />
+                <h2 className='jost text-xl sm:text-[24px] font-medium leading-[100%] text-charcoal-blue'>Attach Files</h2>
+              </div>
+              <Button btn={"Send"} vari={"dan"} type="submit" />
+            </div>
+            {submitted && (
+              <p className="mt-4 text-green-600">
+                Form Submitted Successfully!
+              </p>
+            )}
+          </form>
         </div>
         {/* contact */}
         <div className='bg-[url("/assets/footer-img.webp")] w-full lg:max-w-143.5 bg-cover p-5 sm:p-8 md:p-10 lg:pt-15 lg:pb-14.75 lg:pl-15 bg-no-repeat  bg-center min-h-auto lg:min-h-153.75'>
@@ -45,17 +84,17 @@ const Footer = () => {
 
           <div className='mb-8 lg:mb-10 mt-10 lg:mt-15'>
             <h2 className='jost font-medium text-2xl sm:text-[30px] leading-[100%] mb-5 underline text-white'>Location:</h2>
-            <p className='Poppins font-normal text-base sm:text-[18px] leading-[100%] text-white'>123 Main Street, Anytown, CA 12345, USA</p>
+            <a href='https://maps.google.com/?q=123+Main+Street,+Anytown,+CA+12345,+USA' target='_blank' rel='noopener noreferrer' className='Poppins font-normal text-base sm:text-[18px] leading-[100%] text-white'>123 Main Street, Anytown, CA 12345, USA</a>
           </div>
 
           <div className='mb-8 lg:mb-10'>
             <h2 className='jost font-medium text-2xl sm:text-[30px] leading-[100%] mb-5 underline text-white'>Email:</h2>
-            <p className='Poppins font-normal text-base sm:text-[18px] leading-[100%] text-white'>clever.travel@example.com</p>
+            <a href='mailto:clever.travel@example.com' className='Poppins font-normal text-base sm:text-[18px] leading-[100%] text-white'>clever.travel@example.com</a>
           </div>
 
           <div className='mb-8 lg:mb-10'>
             <h2 className='jost font-medium text-2xl sm:text-[30px] leading-[100%] mb-5 underline text-white'>Phone:</h2>
-            <p className='Poppins font-normal text-base sm:text-[18px] leading-[100%] text-white'>+01 234 5676 23</p>
+            <a href='tel:+01234567623' className='Poppins font-normal text-base sm:text-[18px] leading-[100%] text-white'>+01 234 5676 23</a>
           </div>
           <div className='flex flex-wrap gap-4 cursor-pointer'>
             <a href="https://twitter.com/" target='_blank' rel='noopener noreferrer'>
