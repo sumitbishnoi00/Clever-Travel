@@ -24,8 +24,8 @@ const Navbar = () => {
         <Link href="/">
         <img
           className=" lg:w-[273.42px] lg:h-20 md:w-55 md:h-18 sm:w-50 sm:h-15 w-30 h-8 cursor-pointer"
-          src="/assets/navlogo.webp"
-          alt=""
+          src="/assets/image/webp/navlogo.webp"
+          alt="Nav logo"
         />
         </Link>
         <ul
@@ -43,7 +43,7 @@ const Navbar = () => {
         </ul>
         <button className="jost group lg:px-5 md:px-4 sm:px-3 px-2 cursor-pointer lg:py-2.5 md:py-2 py-1 flex lg:text-[24px] md:text-[20px] sm:text-[18px] text-[14px] font-medium leading-[140%] items-center gap-2.5 bg-muted-blue text-white border border-transparent hover:bg-white hover:border-muted-blue transition-all duration-300">
           <Icons icon={"phone"} className={"lg:w-7.5 lg:h-7.5 md:w-6 md:h-6 sm:w-5 sm:h-5 w-4 h-4"} />
-          <a href="tel:+347-385-6647" className="transition-all duration-300  group-hover:text-muted-blue">
+          <a href="tel:+347-3856647" className="transition-all duration-300  group-hover:text-muted-blue">
             347-385-6647
           </a>
         </button>

@@ -45,7 +45,7 @@ const Footer = () => {
         <div className='p-5 sm:p-8 md:p-10 lg:p-15 lg:max-w-260 w-full border border-cool-gray'>
           <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row justify-between items-start sm:items-center sm:gap-5 flex-nowrap md:mb-15 sm:mb-10 mb-6'>
             <Heading heading={<>Get in <span className='text-orange underline flex-nowrap'>Touch</span> </>} vari={"not"} />
-            <img className=' md:w-[273.41px] sm:w-48 w-36 h-auto' src="/assets/navlogo.webp" alt="footer logo" />
+            <img className=' md:w-[273.41px] sm:w-48 w-36 h-auto' src="/assets/image/webp/navlogo.webp" alt="footer logo" />
           </div>
           <form onSubmit={handSubmit}>
             <div className='flex flex-col'>
@@ -79,7 +79,7 @@ const Footer = () => {
           </form>
         </div>
         {/* contact */}
-        <div className='bg-[url("/assets/footer-img.webp")] w-full lg:max-w-143.5 bg-cover p-5 sm:p-8 md:p-10 lg:pt-15 lg:pb-14.75 lg:pl-15 bg-no-repeat  bg-center min-h-auto lg:min-h-153.75'>
+        <div className='bg-[url("/assets/image/webp/footer-img.webp")] w-full lg:max-w-143.5 bg-cover p-5 sm:p-8 md:p-10 lg:pt-15 lg:pb-14.75 lg:pl-15 bg-no-repeat  bg-center min-h-auto lg:min-h-153.75'>
           <Heading heading={"Contact"} vari={"dan"} />
 
           <div className='mb-8 lg:mb-10 mt-10 lg:mt-15'>
@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
         {/* img */}
         <div>
-          <img className='hidden xl:block max-w-130.5 h-130.5 -z-10 w-full absolute right-0 top-10 ' src="/assets/footer-bg-img.png" alt="golden frame" />
+          <img className='hidden xl:block max-w-130.5 h-130.5 -z-10 w-full absolute right-0 top-10 ' src="/assets/image/png/footer-bg-img.png" alt="golden frame" />
         </div>
 
       </div>

@@ -13,7 +13,7 @@ const Marquee = () => {
                 <Para para={"At Clever Travel Solutions, we proudly partner with leading airlines, luxury hotels, and exclusive resorts worldwide to provide you with unparalleled travel experiences."} vari="sec" />
             </div>
 
-            <div className='w-full flex flex-col gap-12.5 ld:mt-22.5 md:mt-18 sm:mt-15 mt-8'>
+            <div className='w-full flex flex-col gap-5 sm:gap-8 md:gap-12.5 ld:mt-22.5 md:mt-18 sm:mt-15 mt-8'>
               <MarqueeRow data={ROW1} reverse />
               <MarqueeRow data={ROW2} />
               <MarqueeRow data={ROW3} reverse />
