@@ -32,7 +32,7 @@ const Navbar = () => {
           {NAV_DATA.map((item, index) => (
             <Link to={item.link} key={index} onClick={() => setNav(false)}>
               <li
-                className={`jost xl:text-[24px] text-[20px]  font-medium text-muted-blue  hover:text-orange duration-300 transition-all`}
+                className={`jost xl:text-[24px] text-[20px]  font-medium leading-[100%] text-muted-blue  hover:text-orange duration-300 transition-all`}
               >
                 {item.title}
               </li>

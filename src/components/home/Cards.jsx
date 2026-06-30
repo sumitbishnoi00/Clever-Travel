@@ -20,7 +20,7 @@ const Cards = () => {
                 <Icons icon={"doublecot"} className={"md:w-[30.39px] md:h-[26.80px] w-9 h-5"} />
                 <Icons icon={"fivestars"} className={"lg:w-25 md:w-22 sm:w-20 w-19 "} />
               </div>
-              <div className='flex flex-col max-w-81.25 lg:mt-11.5 md:mt-9 sm:mt-6 mt-5'>
+              <div className='flex flex-col max-w-100 lg:mt-11.5 md:mt-9 sm:mt-6 mt-5'>
                 <div className='flex flex-row gap-3.75 items-center mb-5'>
                   <div>
                     <img className='md:w-15 md:h-15 w-12 h-12 ' src={item.image} alt="" />
